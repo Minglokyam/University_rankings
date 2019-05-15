@@ -9,4 +9,4 @@ universities = j["data"]
 
 with open("QS.csv", "w", encoding = "utf-8") as outfile:
 	for university in universities:
-		outfile.write(university["rank_display"] + "," + university["title"].replace("," , "") + "," + university["country"] + "\n")
+		outfile.write(university["rank_display"] + "," + university["title"].replace("," , "") + "," + university["country"].replace(",", "") + "\n")
